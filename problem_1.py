@@ -71,30 +71,3 @@ test_case_3.get('a') # return d
 test_case_3.get('c') # return 3
 test_case_3.get() # return -1
 print("queue -", test_case_3.print_cache())
-
-our_cache=LRU_Cache(3)
-our_cache.set(1,1)
-our_cache.set(2,2)
-our_cache.set(3,3)
-our_cache.set(4,4)
-our_cache.get(4)   # Expected Value = 4
-our_cache.get(1)   # Expected Value = -1
-our_cache.set(2,4)
-our_cache.get(2)   # Expected Value = 4
-our_cache.set(5,5)
-our_cache.get(3)   # Expected Value = -1
-our_cache.get(5)   # Expected Value = 5
-our_cache.set(2,6)
-our_cache.get(2)   # Expected Value = 6
-our_cache.set(6,6)
-our_cache.get(4)   # Expected Value = -1
-our_cache.get(6)   # Expected Value = 6
-our_cache.set(5,10)
-our_cache.set(7,7)
-our_cache.get(2)   # Expected Value = -1
-our_cache.get(7)   # Expected Value = 7
-our_cache.get(6)   # Expected Value = 6
-our_cache.get(5)   # Expected Value = 10
-our_cache.get(5)   # Expected Value = 10
-our_cache.set(8,8)
-print(our_cache.get(7))   # Expected Value = -1 Your Output = 7

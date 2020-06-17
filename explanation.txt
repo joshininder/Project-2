@@ -8,7 +8,7 @@ Problem - 2
 I have used recursion to check each folder for files having specific suffixes. We know file systems are 
 based on  tree-like structure. So based on this structure we can say our time complexity would be the O(h*s) 
 where h is just the height of the graph and w is the spread of leaf nodes or we can say the width of the tree.
-Space complexity of this problem would depend upon the number of values which are returned by recursion.
+let m be the space taken by 1 recursion call Let n be the maximum depth of the recursion tree Complexity is: O(n * m).
 
 Problem - 3
 In Huffman encoding, I have used heapq library for carrying out the encoding process. Time complexity for 

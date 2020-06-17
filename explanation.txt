@@ -1,0 +1,33 @@
+Question - 1
+In LRU_Cache Implementation, I have used deque. I have used dictionary to store the values of the keys. I 
+have pushed the keys into the deque and then have performed get and set method. As I have selected dict,
+so insertion in dict takes O(1). Popleft() of deque uses O(1). Therefore overall time complexity of LRU is 
+O(1) while space complexity is O(cache_size).
+
+Problem - 2
+I have used recursion to check each folder for files having specific suffixes. We know file systems are 
+based on  tree-like structure. So based on this structure we can say our time complexity would be the O(h*s) 
+where h is just the height of the graph and w is the spread of leaf nodes or we can say the width of the tree.
+Space complexity of this problem would depend upon the number of values which are returned by recursion.
+
+Problem - 3
+In Huffman encoding, I have used heapq library for carrying out the encoding process. Time complexity for 
+push and pop operations is O(N log N). As I have iterated over heap and performed push and pop operations in 
+each iteration. So encoding takes overall time complexity of O(k* N Log N) where k is the length of unique 
+characters into the string. Space complexity is O(k) only. Talking about decoding, it has O(k1) where k1 is 
+the length of the decoded string
+
+Problem - 4 
+I have used recursion which says that if the user is in the group then return true else look for the users 
+against every group which is the part of the previous group.
+Time complexity and space complexity  of this is simply O(depth*users).
+
+Problem - 5
+This is just simple as we create trees, stacks using linked list. Here append method operation takes O(1)
+While space complexity is O(n) i.e on the space required to store n objects of block.
+
+Problem - 6
+Problem was to return the union and intersection of linked lists. Here I have traversed two linked lists of 
+size let’s say N1 and N2, and then I have created a third linked list which stores the union and intersecting 
+values. So this all operation takes complexity of O(N1+N2)which is nothing but O(N) only.
+

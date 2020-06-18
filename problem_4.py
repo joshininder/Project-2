@@ -40,8 +40,9 @@ def is_user_in_group(user, group):
     if user in group.get_users():
         return True
     for grp in group.get_groups():
-        return is_user_in_group(user,grp)
-    return False
+        if is_user_in_group(user,grp):
+            return True
+    
 #-------------------Test Case 1---------------------#
 print(is_user_in_group(sub_child_user, child)) #True
 #-------------------Test Case 2---------------------#
